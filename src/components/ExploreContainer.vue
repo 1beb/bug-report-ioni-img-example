@@ -1,16 +1,22 @@
 <template>
   <div id="container">
     <strong>{{ name }}</strong>
+    <ion-img :src="img"></ion-img>
     <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
   </div>
 </template>
 
 <script lang="ts">
+import { IonImg } from "@ionic/vue";
 
 export default {
   name: 'ExploreContainer',
+  components: {
+    IonImg
+  },
   props: {
-    name: String
+    name: String,
+    img: String,
   }
 }
 </script>
