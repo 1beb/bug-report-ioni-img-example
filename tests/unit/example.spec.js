@@ -1,10 +1,11 @@
 import { mount } from '@vue/test-utils'
-import Tab1Page from '@/views/Tab1Page.vue'
+import ExploreContainer from '@/components/ExploreContainer.vue'
 
 describe('Tab1Page.vue', () => {
   it('renders tab 1 Tab1Page', () => {
-    const wrapper = mount(Tab1Page, { propsData: { name: "hello", img: "https://picsum.photos/200/300" }})
-    expect(wrapper.text()).toMatch('Tab 1 page')
+    const wrapper = mount(ExploreContainer, { propsData: { name: "hello", img: "https://picsum.photos/200/300" }})
+    expect(wrapper.text()).toMatch('hello')
     console.log(wrapper.html())
+    console.log(wrapper.props())
   })
 })

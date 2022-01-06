@@ -12,7 +12,7 @@
         </ion-toolbar>
       </ion-header>
     
-      <ExploreContainer name="Tab 1 page" />
+      <ExploreContainer name="Tab 1 page" img="https://picsum.photos/200/300"/>
     </ion-content>
   </ion-page>
 </template>

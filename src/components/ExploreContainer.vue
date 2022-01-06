@@ -1,6 +1,7 @@
 <template>
   <div id="container">
     <strong>{{ name }}</strong>
+    {{ img }}
     <ion-img :src="img"></ion-img>
     <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
   </div>
